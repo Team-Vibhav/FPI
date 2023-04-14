@@ -10,7 +10,7 @@ App = {
         if(window.web3) {
             App.web3Provider=window.web3.currentProvider;
         } else {
-            App.web3Provider=new Web3.proviers.HttpProvider('http://localhost:7545');
+            App.web3Provider=new Web3.proviers.HttpProvider('https://sepolia.infura.io/v3/e2a6bbd9f492420982cf64ae66cd0c8a');
         }
 
         web3 = new Web3(App.web3Provider);

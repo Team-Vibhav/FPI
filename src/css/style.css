@@ -4,6 +4,9 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ *{
+ }
+ @import url("https://fonts.googleapis.com/css?family=Raleway:700|Roboto:300");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -1293,7 +1296,7 @@ pre {
   .order-xl-9 {
     -webkit-box-ordinal-group: 10;
     -ms-flex-order: 9;
-    order: 9; }
+    order: 9; } 
   .order-xl-10 {
     -webkit-box-ordinal-group: 11;
     -ms-flex-order: 10;
@@ -8161,8 +8164,6 @@ h1, h2, h3, h4, h5,
 .bg-primary {
   background: #ff0000 !important; }
 
-.ftco-section {
-  padding: 7em 0; }
 
 .ftco-no-pt {
   padding-top: 0; }
@@ -8180,7 +8181,7 @@ h1, h2, h3, h4, h5,
   background-position: center center; }
 
 .ftco-navbar-light {
-  background: #252525 !important;
+  background: #062c33 !important;
   z-index: 3;
   padding: 0; }
   @media (max-width: 991.98px) {
@@ -8212,7 +8213,7 @@ h1, h2, h3, h4, h5,
       display: block;
       width: 0;
       height: 2px;
-      background: #ff0000;
+      background: #1d4ed8;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
@@ -8222,7 +8223,7 @@ h1, h2, h3, h4, h5,
           -o-transition: none;
           transition: none; } }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #ff0000; }
+      color: #1d4ed8; }
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
         width: 100%; }
     @media (max-width: 991.98px) {
@@ -8286,19 +8287,22 @@ h1, h2, h3, h4, h5,
       outline: none !important; }
 
 .navbar-brand {
-  color: #000;
+  color:#007bff; 
+
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 1.2;
   margin-bottom: 30px; }
   .navbar-brand span {
     display: block;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.3); }
-  .navbar-brand:hover, .navbar-brand:focus {
-    color: #000; }
+    margin-top: 2px;
+  color: #ffffff;
+
+   }
+  
 
 .social-media {
   display: inline-block; }
@@ -8367,3 +8371,82 @@ h1, h2, h3, h4, h5,
   border: 1px solid rgba(0, 0, 0, 0.1); }
   .form-control:focus, .form-control:active {
     border-color: #000; }
+
+
+    
+.mainbody {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000529;
+
+
+}
+.textbody{
+  font-family: "Roboto", serif;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.hero {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: white;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px 60px 0;
+}
+
+.h1 {
+  font-family: "Ralewey", sans-serif;
+  color: white;
+  font-size: 4vw;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 3px;
+  z-index: 10;
+  margin-bottom: 32px;
+}
+.span-content {
+  position: absolute;
+  left: 0;
+  font-size: x-large;
+  word-spacing: 1rem;
+  letter-spacing: 3px;
+  margin-left: 2px;
+  margin-top: 6.34rem;
+  display: inline-block;
+}
+
+.h2 {
+  position: absolute;
+  margin-top: 10.6rem;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color : white;
+}
+
+#container-p5 {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0;
+  left:2;
+  opacity: 0;
+  z-index: 0;
+}
+
+
+.highlight {
+  left: 0;
+  position: absolute;
+  color: #2746ff;
+  margin-top: 6rem;
+}
